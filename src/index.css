@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
+  background: linear-gradient(180deg, rgb(51, 88, 57), rgb(165, 204, 160));
   display: flex;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
@@ -26,6 +26,9 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+  float: right;
 }
 button:hover {
   border-color: #646cff;
@@ -43,9 +46,9 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 8px 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   gap: 1px;
-  background-color: black;
+  /* background-color: black; */
   border-radius: 8px;
   overflow: auto;
 }
@@ -53,6 +56,9 @@ ul {
 li {
   background-color: white;
   padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
 }
 
 li:hover {
