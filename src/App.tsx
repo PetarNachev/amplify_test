@@ -42,7 +42,7 @@ function App() {
           <li
             key={todo.id}>{todo.content}
             <button onClick={() => deleteTodo(todo.id)}> Delete </button>
-            <button onClick={() => updateTodo(todo.id, todo.content)}> Edit </button>
+            <button onClick={() => updateTodo(todo.id, todo.content!)}> Edit </button>
           </li>
         ))}
       </ul>
