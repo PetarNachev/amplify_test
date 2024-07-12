@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
-import { Model } from "aws-cdk-lib/aws-apigateway";
-import { DefaultValue } from "aws-cdk-lib/aws-cloudwatch";
 
 const client = generateClient<Schema>();
 
