@@ -42,9 +42,9 @@ function App() {
   return (
 
     <Authenticator>
-      {({ signOut }) => (
+      {({ signOut, user }) => (
         <main>
-          <h1>To do list</h1>
+          <h1>{user?.signInDetails?.loginId}'s todos</h1>
           <button onClick={createTodo}>+ add To do</button>
           <ul>
             {todos.map((todo) => (
