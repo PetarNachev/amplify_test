@@ -36,7 +36,10 @@ function App() {
   }
 
   function deleteTodo(id: string) {
-    client.models.Todo.delete({ id })
+    let todoDelete = window.confirm('Are you sure you want to delete the todo?')
+    if (todoDelete) {
+      client.models.Todo.delete({ id })
+    }
   }
 
   return (
